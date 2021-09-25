@@ -23,7 +23,7 @@ impl MapBuilder {
     }
 
     fn fill(&mut self, tile : TileType) {
-        self.map.tiles.iter_mut().for_each(|t| * t = tile);
+        self.map.tiles.iter_mut().for_each(|t| *t = tile);
     }
 
     fn build_random_rooms(&mut self, rng : &mut RandomNumberGenerator) {
